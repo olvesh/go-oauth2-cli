@@ -119,7 +119,7 @@ func NewLoginCmd() *cobra.Command {
 
 	loginCmd.Flags().BoolVar(&sso, "sso", false, "If it is true, then use oauth2 flow to login")
 	loginCmd.Flags().StringVar(&a.clientID, "client-id", "example-app", "OAuth2 client ID of this application.")
-	loginCmd.Flags().StringVar(&a.clientSecret, "client-secret", "ZXhhbXBsZS1hcHAtc2VjcmV0", "OAuth2 client secret of this application.")
+	loginCmd.Flags().StringVar(&a.clientSecret, "client-secret", "", "OAuth2 client secret of this application.")
 	loginCmd.Flags().StringVar(&a.redirectURI, "redirect-uri", "http://127.0.0.1:8085/callback", "Callback URL for OAuth2 responses.")
 	loginCmd.Flags().StringArrayVar(&a.extraScopes, "scope", []string{}, "extra scopes for ouath2 url code request")
 	loginCmd.Flags().BoolVar(&a.offlineAccess, "offline-access", true, "If it is true, token for offline access will be granted")
