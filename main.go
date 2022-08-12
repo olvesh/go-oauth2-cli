@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/imrenagi/go-oauth2-cli/cmd/commands"
+	"github.com/olvesh/go-oauth2-cli/commands"
 )
 
 func main() {
